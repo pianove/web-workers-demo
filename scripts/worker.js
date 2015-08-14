@@ -6,7 +6,8 @@ this.onmessage = function(e) {
 
   try {
     length = imageData.data.length / 4;
-    for (i = j = 0, ref = length; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
+//    for (i = j = 0, ref = length; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
+    for (i = 0; i<length; i++) {
       r = imageData.data[i * 4 + 0];
       g = imageData.data[i * 4 + 1];
       b = imageData.data[i * 4 + 2];
